@@ -290,7 +290,7 @@
     
     if (![self isAuthorized])
     {
-        NSString* message = nil;
+        NSString* message = @"";
         BOOL authStatusAvailable = [CLLocationManager respondsToSelector:@selector(authorizationStatus)]; // iOS 4.2+
         if (authStatusAvailable) {
             NSUInteger code = [CLLocationManager authorizationStatus];
